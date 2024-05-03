@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    background: #631ac2;
+}
+.container{
+    background: #fff;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    margin: 30rem auto;
+    display: flex;
+    align-items: center;
+}
+input{
+    width: 100%;
+    padding: 1rem 0;
+    border: none;
+    outline: none;
+    font-size: 2.5rem;
+    color: #555;
+}
+img{
+    width: 35px;
+    cursor: pointer;
+}
