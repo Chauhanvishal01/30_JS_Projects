@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+
+}
+
+.dark-theme {
+    --primary-color: #000106;
+    --secondary-color: #fff;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background: var(--primary-color);
+    position: relative;
+}
+
+nav {
+    width: 84%;
+    margin: auto;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+
+}
+
+.logo {
+    color: #ff4321;
+
+    cursor: pointer;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 1rem 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1.6rem;
+
+}
+
+nav ul li a:hover {
+    color: #ff4321;
+}
+
+.info {
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+.info h1 {
+    font-size: 7rem;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+}
+
+.info h1 span {
+    color: #ff4321;
+}
+
+.info p {
+    color: var(--secondary-color);
+    line-height: 2.2rem;
+    font-size: 1.7rem;
+}
+
+.info a {
+    text-decoration: none;
+    background: var(--secondary-color);
+    padding: 1rem 1.8rem;
+    color: var(--primary-color);
+    font-size: 1.7rem;
+    display: inline-block;
+    margin: 3rem 0;
+    border-radius: 5px;
+}
+
+.img-box {
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+
+}
+
+.img-box img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.img-box:hover .back-img {
+    bottom: 40px;
+
+}
+
+.img-box:hover .main-img {
+    left: 54%;
+
+}
+
+.social-links {
+    margin-left: 8%;
+    margin-top: 100px;
+}
+
+.social-links a {
+    font-size: 3rem;
+    color: var(--secondary-color);
+    margin-right: 2rem;
+}
+
+.social-links a:hover {
+    color: #ff4321;
+}
+
+#icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+}
