@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <i class="fas fa-paper-plane"></i>
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter Your Name" id="contact-name" >
+                <span id="name-error"></span>
+            </div>
+            <div class="input-group">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="9876543210" id="contact-phone">
+                <span id="phone-error"></span>
+
+            </div>
+            <div class="input-group">
+                <label>Email Id</label>
+                <input type="email" placeholder="Enter Your Email" id="contact-email">
+                <span id="email-error"></span>
+
+            </div>
+            <div class="input-group">
+                <label>Your Message</label>
+                <textarea cols="30" rows="5" placeholder="Enter your message" id="contact-msg"></textarea>
+                <span id="msg-error"></span>
+
+            </div>
+
+            <button id="btn">Submit</button>
+            <span id="submit-error"></span>
+
+          
+        </form>
+    </div>
+</body>
+</html>
