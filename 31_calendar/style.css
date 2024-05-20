@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+
+}
+
+.calendar{
+    background-color: #fff;
+    width: 400px;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+.month{
+    background-color: blue;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.day{
+    font-size: 20px;
+    color: #8d8585;
+
+}
+.day-number{
+    font-size: 8rem;
+    font-weight: 800;
+    margin-top: 1rem;
+
+}
+
+.year{
+    margin: 2rem 0;
+    font-size: 2rem;
+    color: #8d8585;
+    font-weight: 500;
+}
+
+
