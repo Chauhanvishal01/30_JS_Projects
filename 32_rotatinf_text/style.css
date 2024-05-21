@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    background: linear-gradient(45deg, yellow 50%, white 50%);
+    background-size: 100% 100%;
+    
+}
+.outer-heading {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+h1 {
+    font-size: 4.5rem;
+    font-weight: 800;
+}
+
+
+.inner-heading {
+    border: 0px solid #fff;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.inner-heading span {
+    position: relative;
+    color: blueviolet;
+    animation: animation 10s ease infinite;
+}
+
+
+@keyframes animation {
+
+    0%,
+    100% {
+        top: 0;
+    }
+    20%{
+        top: 0;
+    }
+    25%{
+        top: -5rem;
+    }
+    45%{
+        top: -5rem;
+    }
+    50%{
+        top: -10rem;
+    }
+70%{
+    top: -10rem;
+}
+75%{
+    top: -15rem;
+}
+95%{
+    top: -15rem;
+}
+}
