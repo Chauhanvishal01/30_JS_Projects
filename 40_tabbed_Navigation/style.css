@@ -1,0 +1,230 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+body{
+    background-color: blueviolet;
+
+}
+.container{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.tabbed-container{
+    position: relative;
+}
+.tabbed-container .menu-links{
+    position: relative;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+}
+ li{
+    list-style: none;
+
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+.menu-links ul li{
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.menu-links ul li:not(:last-child) {
+    margin-right: 3rem;
+}
+.menu-links ul li.active,
+.menu-links ul li.hover{
+    background: #000;
+    color: #fff;
+
+}
+
+/* Sections */
+
+.sections section:not(.visible){
+    display: none;
+
+}
+.sections .visible{
+    animation: feedIn 1s;
+}
+@keyframes feedIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}
+
+.sections > section{
+    padding: 2rem;
+    text-align: center;
+    width: 80%;
+    margin: 6rem auto 0;
+    background: #fff;
+    position: relative;
+}
+.sections .about-section{
+    padding-bottom: 5rem;
+}
+.about-section h2{
+    padding: 4rem;
+    font-weight: 800;
+    font-size: 4rem;
+}
+
+.about-section img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+.about-section h4{
+    font-size: 3rem;
+    font-weight: 200;
+    pad: 2rem;
+}
+.about-section p{
+    width: 80%;
+    line-height: 1.6;
+    margin-top: 1rem;
+    margin: auto;
+    color: #827d7d;
+    font-size: 2rem;
+}
+
+.sections .courses-section{
+    overflow: hidden;
+
+}
+.courses-section h2{
+    padding: 4rem;
+    font-size: 4rem;
+    font-weight: 800;
+}
+.courses-section div{
+    box-shadow: 1px 1px 5px 2px #ccc;
+    text-align: center;
+    width: 45%;
+    padding: 1rem;
+    display: inline-block;
+    margin: 2rem;
+}
+.courses-section div img{
+    width: 100%;
+    border-radius: 4px;
+    object-fit: contain;
+}
+.courses-section div h4{
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.sections .contact-section{
+    padding-bottom: 5rem;
+}
+.contact-section h2{
+    padding: 2rem 2rem 3rem 2rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+
+}
+.contact-section .social-links a{
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 3rem;
+    margin: 1rem;
+    transition: 0.5s;
+    letter-spacing: 3px;
+}
+
+.contact-section .social-links a:hover{
+    opacity: 0.8;
+}
+.contact-section .social-links a:first-child{
+    background: #dc143c;
+}
+.contact-section .social-links a:nth-child(2){
+    background: #67cdf5;
+}
+.contact-section .social-links a:nth-child(3){
+    background:#fe5e93;
+}
+.contact-section .social-links a:nth-child(4){
+    background: #0000ff;
+}
+.contact-section .social-links a:last-child{
+    background: #2a363b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:567px) {
+    .menu-links ul li{
+        display: block;
+        width: 100%;
+        margin:  1rem 0;
+    }
+    .about-section h2{
+        padding: 2rem;
+        font-size: 2.5rem;
+    }
+    .about-section img{
+        width: 80%;
+        height: 20%;
+        border-radius: 4px;
+    }
+    .about-section p{
+        width: 100%;
+    }
+    .courses-section h2{
+        font-size: 2.5rem;
+        padding: 2rem;
+    }
+    .courses-section div{
+        width: 100%;
+        margin: 1rem 0;
+    }
+    .contact-section .social-links a{
+        display: block;
+        margin: 1rem;
+    }
+}
