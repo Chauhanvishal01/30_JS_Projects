@@ -1,0 +1,443 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --main-color: #e3e8e4;
+    --primary-color: #363636;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+
+}
+
+/* ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.logo {
+    font-size: 2rem;
+}
+
+ul li {
+    display: inline;
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 2rem;
+    margin-left: 4rem;
+}
+
+ul li a:hover {
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 1rem;
+}
+
+.btn-fill {
+    padding: 1rem 3rem;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 100px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+/* HEader Section */
+
+.btn-outline {
+    background: transparent;
+    border: none;
+    margin-left: 2rem;
+    font-size: 2rem;
+    font-weight: 900;
+    cursor: pointer;
+    border: 2px solid var(--primary-color);
+    border-radius: 100px;
+    padding: 1rem 3rem;
+
+
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-container {
+    margin-left: 6rem;
+
+}
+
+.main-heading {
+    font-size: 8rem;
+    color: #0000004f;
+    margin-bottom: 2rem;
+
+}
+
+.main-heading span {
+    color: #000;
+}
+
+.primary-heading {
+    max-width: 500px;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.img-container {
+    width: 500px;
+    height: 500px;
+    background: var(--main-color);
+    border-radius: 100%;
+}
+
+.img-container img {
+    width: 400px;
+    height: 500px;
+    margin-left: 2rem;
+    margin-bottom: 4rem;
+}
+
+/* Popularity Section */
+
+.popularity {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.popularity div {
+    margin-right: 5rem;
+
+}
+
+.popularity div h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: #363636;
+
+}
+
+.popularity div p {
+    font-size: 2rem;
+    color: #363636;
+
+}
+
+/* Product Section */
+
+.products-heading {
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    font-size: 6rem;
+    color: #0000004f;
+
+}
+
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5rem;
+
+}
+
+.product .product-img-layer {
+    background: var(--main-color);
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    padding: 2rem;
+}
+
+
+.product .product-img-layer .img {
+    width: 200px;
+    height: 200px;
+}
+
+.img-one {
+    background: url(img/two.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.img-two {
+    background: url(img/three.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.img-three {
+    background: url(img/four.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.product-content {
+    background: var(--primary-color);
+    padding: 2.7rem;
+    padding-bottom: 5rem;
+    text-align: center;
+    color: #fff;
+}
+
+.product-content .product-name {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+
+}
+
+.product-content .product-quality {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+
+}
+
+
+.b-conatiner {
+    text-align: center;
+}
+
+.b-conatiner button {
+    border: none;
+    background: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: 2rem;
+    margin-top: 4rem;
+    font-size: 9rem;
+}
+
+/* Why us? */
+.why-us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+
+.why-us .img-layer .img {
+    width: 400px;
+    height: 400px;
+    background: url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.card {
+    width: 200px;
+    height: 150px;
+    padding: 2rem;
+    margin-top: 4rem;
+    border-radius: 5px;
+}
+
+.card.card-fill {
+    background: #e3e8e4c7;
+    position: relative;
+}
+
+.star,
+.card-title {
+    font-size: 2rem;
+}
+
+.card-info {
+    font-size: 1.8rem;
+}
+
+.card.card-fill .star {
+    width: 10px;
+    height: 10px;
+    padding: 1.5rem;
+    border-radius: 100%;
+    background: var(--primary-color);
+    position: absolute;
+    top: -2px;
+    left: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.card h1 {
+    color: #000;
+    font: 1.7rem;
+}
+
+.card p {
+    color: #999;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+
+}
+
+/* Features */
+
+.features {
+    margin-top: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* footer */
+footer {
+    background: var(--primary-color);
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+
+footer .logo-conatiner h1 {
+    font-size: 6rem;
+    margin-bottom: 2rem;
+
+}
+
+footer .logo-conatiner p {
+    max-width: 400px;
+    line-height: 2.5rem;
+    font-size: 2rem;
+}
+
+footer .about-company {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer .about-company .conatiner {
+    margin-right: 4rem;
+    margin-top: 2rem;
+}
+
+.about-company .conatiner h1 {
+    margin-bottom: 5rem;
+    font-size: 3rem;
+}
+
+.about-company .conatiner p {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+/* responsive */
+
+@media only screen and (max-width:1150px) {
+    .img-conatiner {
+        width: 340px;
+        height: 340px;
+    }
+
+    .d-none {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width:900px) {
+    header {
+        height: 120vh;
+        text-align: center;
+        justify-content: center;
+    }
+
+
+    header .content-container {
+        margin-bottom: 6rem;
+        margin-top: 4rem;
+        margin-left: 0;
+    }
+
+    .popularity {
+        margin-top: 22rem;
+        text-align: center;
+    }
+
+    .product {
+        margin-top: 2rem;
+    }
+
+    .why-us {
+        text-align: center;
+    }
+
+    .cards {
+        margin: 5rem;
+    }
+
+}
+
+@media only screen and(max-width:600px) {
+    .primary-heading {
+        width: 350px;
+    }
+
+    .img-conatiner {
+        width: 350px;
+        height: 350px;
+    }
+
+    .popularity div h1 {
+        font-size: 1rem;
+    }
+
+    .popularity div {
+        font-size: .9rem;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 7rem;
+    }
+    .main-heading{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .cards{
+        margin-right: 5rem;
+    }
+    .card-fill{
+        margin-left: 1rem;
+    }
+
+}
