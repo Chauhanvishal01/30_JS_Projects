@@ -1,0 +1,192 @@
+:root {
+    --light-bg: #fff;
+    --light-primary: #f7f9fa;
+    --light-secondary: #f0f2f3;
+    --light-divider: #ebedee;
+
+    --dark-bg: #000;
+    --dark-primary: #15181c;
+    --dark-secondary: #2f3336;
+    --dark-divider: #2f3336;
+
+    --highlight-color: #9acd32;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    font-size: 62.5%;
+    display: table;
+
+}
+
+body {
+    width: 100%;
+    background: var(--background-color);
+    display: table-cell;
+    vertical-align: middle;
+}
+
+h1 {
+    font-size: 1.3em;
+    font-weight: 800;
+}
+
+.light-theme {
+    --background-color: var(--light-bg);
+    ----primary-bg: var(--light-primary);
+    --secondary-bg: var(--light-secondary);
+    --divider: var(--light-divider);
+}
+
+.dark-theme {
+    --background-color: var(--dark-bg);
+    ----primary-bg: varvar(--dark-primary);
+    --secondary-bg: varvar(--dark-secondary);
+    --divider: varvar(--dark-divider);
+    color: #fff !important;
+}
+
+.card {
+    background: var(----primary-bg);
+    height: auto;
+    width: 360px;
+    margin: 0 auto;
+    border-radius: 2.4rem;
+}
+
+.card-title {
+    margin: 0;
+    padding: 2rem 2rem 1.5rem 2rem;
+    font-size: 2rem;
+
+}
+
+.divider {
+    display: block;
+    width: 100%;
+    border-top: 1px solid var(--secondary-bg);
+
+}
+
+.profile {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: stretch;
+    justify-items: stretch;
+    justify-content: space-between;
+}
+
+.profile:hover,
+.show-more:hover {
+    background: var(--secondary-bg);
+}
+
+.profile-pic {
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-position: top;
+    background-size: cover;
+
+}
+
+.img-one {
+    background-image: url(img/one.jpg);
+}
+
+.img-two {
+    background-image: url(img/two.jpg);
+}
+
+.img-three {
+    background-image: url(img/three.jpg);
+}
+
+.profile-info {
+    padding: 0 1rem;
+    flex-grow: 1;
+
+}
+
+.display-name,
+.username {
+    display: block;
+}
+
+.display-name {
+    font-size: 2rem;
+    font-weight: 800;
+
+}
+
+.username {
+    font-size: 1.5rem;
+    color: #9b9999;
+
+}
+
+.username::before {
+    content: '@';
+}
+
+.follow-button {
+    background-color: inherit;
+    border: 1px solid var(--highlight-color);
+    border-radius: 1.6rem;
+    color: var(--highlight-color);
+    padding: 6px 16px;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.followed {
+    background-color: var(--highlight-color);
+    color: #fff;
+}
+
+.show-more {
+    font-size: 2rem;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    display: block;
+    padding: 1.5rem 2rem 2rem 2rem;
+    text-decoration: none;
+    color: var(--highlight-color);
+}
+
+.show-more:focus {
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+.themer {
+    background-color: var(----primary-bg);
+    color: inherit;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    padding: 8px 10px;
+    font-size: 2rem;
+}
